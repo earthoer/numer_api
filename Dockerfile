@@ -12,9 +12,9 @@ ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
 #copy all file to docker direc
 COPY ./ ./
-
+RUN mkdir ./Data
 COPY package.json ./
-COPY /src/Data/db.json ./    
+COPY /src/Data/db.json ./Data    
 COPY /src/earthoer-api_numer.json ./
 #copy server to docker
 COPY /src/server.js ./
