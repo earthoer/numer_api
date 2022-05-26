@@ -3,7 +3,7 @@ const auth = require('json-server-auth')
 const swaggerUi = require('swagger-ui-express')
 const swaggerDocument = require('./earthoer-api_numer.json');
 const app = jsonServer.create()
-const router = jsonServer.router('db.json')
+const router = jsonServer.router('./Data/db.json')
 
 const middlewares = jsonServer.defaults({noCors:true})
 var cors = require("cors");

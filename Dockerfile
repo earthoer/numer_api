@@ -15,7 +15,7 @@ COPY ./ ./
 
 COPY package.json ./
 COPY /src/Data/db.json ./    
-
+COPY /src/earthoer-api_numer.json ./
 #copy server to docker
 COPY /src/server.js ./
 
